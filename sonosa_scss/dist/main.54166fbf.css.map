@@ -1,1 +1,1 @@
-{"version":3,"sources":["css/main.scss"],"names":[],"mappings":"AAAA","file":"main.54166fbf.css","sourceRoot":"..","sourcesContent":[""]}
+{"version":3,"sources":["css\\main.scss"],"names":[],"mappings":"AAAA;EACI;EACA","file":"main.54166fbf.css","sourceRoot":"..","sourcesContent":[".body-wrapper {\r\n    margin:0;\r\n    padding:0;\r\n}\r\n"]}

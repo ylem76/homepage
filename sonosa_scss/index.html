@@ -15,7 +15,7 @@
     <meta property="og:site_name" content="남북교류협력지원협회 웹진 이음">
     <meta property="og:title" content="웹진 이음 2020년 8월호">
     <meta property="og:description" content="남북교류협력을 위한 첫걸음 웹진 이음과 함께하세요.">
-    <meta property="og:image" content="img/share_og.png">
+    <meta property="og:image" content="img/vol/share_fb.png">
     <meta property="og:url" content="https://webzine.sonosa.or.kr">
 
     <!-- twitter card -->
@@ -23,18 +23,16 @@
     <meta property="twitter:site" content="남북교류협력지원협회 웹진 이음">
     <meta property="twitter:title" content="웹진 이음 2020년 8월호">
     <meta property="twitter:description" content="남북교류협력을 위한 첫걸음 웹진 이음과 함께하세요.">
-    <meta property="twitter:image" content="img/share_twit.png">
+    <meta property="twitter:image" content="img/vol/share_twit.png">
     <meta property="twitter:url" content="https://webzine.sonosa.or.kr">
 
     <!-- favicon -->
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-    <link rel="icon" href="favicon.png">
-    <link rel="apple-touch-icon" href="favicon.png">
+    <link rel="icon" href="img/favicon.png">
+    <link rel="apple-touch-icon" href="img/favicon.png">
 
     <!-- css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
-    <link rel="stylesheet" href="css/header.scss">
-    <link rel="stylesheet" href="css/footer.scss">
     <link rel="stylesheet" href="css/main.scss">
 
     <!-- js -->
@@ -43,12 +41,11 @@
 </head>
 
 <body>
-    <div class="body__wrapper">
-        <header id="header" class="section">
-            <h1 class="logo"></h1>
-            <div class="logo">
-                <a href="#" class="logo--sonosa">남북교류협력지원협회</a>
-                <a href="#" class="logo--webzine">남북교류협력지원협회 웹진 이음</a>
+    <div class="body-wrapper">
+        <header class="section section--header">
+            <div class="section--header__logo">
+                <a href="#" class="logo logo--sonosa">남북교류협력지원협회</a>
+                <a href="#" class="logo logo--webzine">남북교류협력지원협회 웹진 이음</a>
             </div>
 
             <ul class="nav--scroll">
@@ -66,19 +63,21 @@
                 </li>
             </ul>
 
-            <button id="toggle-menu">
+            <button class="toggle-menu">
                 사이드메뉴 열기
-                <span class="line"></span><span class="line"></span><span class="line"></span>
+                <span class="toggle-menu__line"></span>
+                <span class="toggle-menu__line"></span>
+                <span class="toggle-menu__line"></span>
             </button>
         </header>
         <!-- Visual Section -->
-        <section class="full section--visual">
-            <div class="container">
-                <h1 class="logo--main">
+        <section class="section section--visual">
+            <div class="section__container container">
+                <h1 class="section--visual__logo">
                     남북교류협력지원협회 웹진 이음
                 </h1>
-                <div class="webzine-title">
-                    VOL. <span class="bold">83</span> / 2020. <span class="bold">08</span>
+                <div class="section--visual__webzine-title">
+                    VOL. <b>83</b> / 2020. <b>08</b>
                 </div>
             </div>
             <button class="scroll-bottom" onclick="javascript:smoothscroll($('.category-1'));">
@@ -86,221 +85,200 @@
             </button>
         </section>
 
-        <!-- List Section-->
-        <section id="list">
-            <section class="list__cate1">
-                <h2>
-                    이달의 <span class="bold">이야기</span>
-                </h2>
-                <ul>
-                    <li class="thumb-1"><a href="#"> <span class="bg-hover"></span>
-                            <div class="text-wrapper">
-                                <h3>커버스토리</h3>
-                                <p>
-                                    그날이 오면
-                                </p>
-                            </div>
-                        </a></li>
-                    <li class="thumb-3"><a href="#"><span class="bg-hover"></span>
-                            <div class="text-wrapper">
-                                <h3>
-                                    특집
-                                </h3>
-                                <p>
-                                    ‘탄소의 세계 in 한반도’
-                                </p>
-                            </div>
-                        </a></li>
-                </ul>
-            </section>
-            <section class="list__cate2">
-                <img src="img/category__focus-on.png" alt="focus on">
-                <h2>
-                    <span class="bold">포커스</span> 온
-                </h2>
-                <ul>
-                    <li class="thumb-2"><a href="#"> <span class="bg-hover"></span>
-                            <div class="text-wrapper">
-                                <h3>일러두기</h3>
-                                <p>
-                                    담당자가 알려주는 ‘이것만은 꼭!’
-                                </p>
-                            </div>
-                        </a></li>
-                    <li class="thumb-2"><a href="#"><span class="bg-hover"></span>
-                            <div class="text-wrapper">
-                                <h3>
-                                    연재기사
-                                </h3>
-                                <p>
-                                    생존과 평화 2편 - 말라리아 퇴치를 위한 남북 공동방역 사업
-                                </p>
-                            </div>
-                        </a></li>
-                </ul>
-            </section>
-            <section class="list__cate3">
-                <img src="img/category__information.png" alt="information">
-                <h2>
-                    <b>정보</b> 마당
-                </h2>
-                <ul>
-                    <li class="thumb-1"><a href="#">
-                            <div class="text-wrapper">
-                                <h3>NK Trend1</h3>
-                                <p>
-                                    북한 경제·대외무역 동향 외
-                                </p>
-                            </div>
-                        </a></li>
-                    <li class="thumb-1"><a href="#">
-                            <div class="text-wrapper">
-                                <h3>NK Trend2</h3>
-                                <p>
-                                    대북인도개발협력 동향
-                                </p>
-                            </div>
-                        </a></li>
-                    <li class="thumb-1"><a href="#">
-                            <div class="text-wrapper">
-                                <h3>이달의 읽을거리</h3>
-                                <p>
-                                    결박과 보상 : 북중관계의 방정식을 푸는 열쇠
-                                </p>
-                            </div>
-                        </a></li>
-                </ul>
-            </section>
-            <aside class="subscribe">
-                <div class="container event_2">
-                    <div class="sub-icon">
-                        <span class="ico-img">
-                        </span>
-                    </div>
-                    <div class="sub-text">
-                        <h4>웹진 구독신청</h4>
-                        <p>
-                            남북교류협력지원협회 웹진 이음 구독을 희망하시면, <br>아래에 이메일 주소를 입력해주세요.
-                        </p>
-                        <input name="eventEmail" type="email" placeholder="example@sonosa.or.kr" required="">
-                        <button class="sonosa_subscribe" data-action="/event/insertEvent.do"
-                            onclick="sonosa_subscribe(2)">웹진 구독 신청하기</button>
-                    </div>
-                </div>
-            </aside>
-
-            <section class="list__cate4">
-                <img src="img/category__communication.png" alt="communication">
-                <h2>
-                    <b>소통</b> 마당
-                </h2>
-                <ul>
-                    <li class="thumb-1"><a href="#">
-                            <div class="text-wrapper">
-                                <h3>SONOSA NEWS</h3>
-                                <p>
-
-                                </p>
-                            </div>
-                        </a></li>
-                    <li class="thumb-1"><a href="#">
-                            <div class="text-wrapper">
-                                <h3></h3>
-                                <p>
-                                    남북교류협력 분야별 전문가 초청 세미나 개최 외
-                                </p>
-                            </div>
-                        </a></li>
-                    <li class="thumb-1"><a href="#">
-                            <div class="text-wrapper">
-                                <h3>참여코너</h3>
-                                <p>
-                                    말풍선 채워넣기
-                                </p>
-                            </div>
-                        </a></li>
-                </ul>
-            </section>
-        </section>
-
-        <!-- footer -->
-        <footer id="footer">
-            <!-- 웹진 구독 팝업 -->
-            <div class="modal fade" id="subscribe" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
-                aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered" role="document">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <button type="button" class="close" data-dismiss="modal">×</button>
-                            </div>
-                            <div class="modal-body content event_2">
-                                <div class="sub-icon">
-                                    <span class="ico-img"> </span>
-                                </div>
-                                <div class="sub-text">
-                                    <h4>웹진 구독신청</h4>
-                                    <p>
-                                        남북교류협력지원협회 웹진 이음 구독을 희망하시면,<br>아래에 이메일 주소를 입력해주세요.
-                                    </p>
-                                    <input name="eventEmail" type="email" placeholder="example@sonosa.or.kr"
-                                        required="">
-                                    <button class="artwa_submit" data-action="/event/insertEvent.do"
-                                        onclick="artwa_send(2)" data-dismiss="modal">웹진 구독 신청하기</button>
-                                </div>
-                            </div>
+        <!-- List Section category1-->
+        <section class="section section--cate2">
+            <h2 class="section__h2">
+                이달의 <b>이야기</b>
+            </h2>
+            <ul class="article-list">
+                <li class="article-list__thumb-wrapper article-list__thumb-wrapper--s">
+                    <a class="thumb" href="#">
+                        <div class="thumb__text-wrapper">
+                            <h3 class="thumb__cate">커버 스토리</h3>
+                            <p class="thumb__txt">
+                                그날이 오면
+                            </p>
                         </div>
-                    </div>
+                    </a>
+                </li>
+                <li class="article-list__thumb-wrapper article-list__thumb-wrapper--l">
+                    <a class="thumb" href="#">
+                        <div class="thumb__text-wrapper">
+                            <h3 class="thumb__cate">특집</h3>
+                            <p class="thumb__txt">
+                                ‘탄소의 세계 in 한반도’
+                            </p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </section>
+        <!-- List Section category2-->
+        <section class="section section--cate2">
+            <h2 class="section__h2">
+                <b>포커스</b> 온
+            </h2>
+            <ul class="article-list">
+                <li class="article-list__thumb-wrapper article-list__thumb-wrapper--m">
+                    <a class="thumb" href="#">
+                        <div class="thumb__text-wrapper">
+                            <h3 class="thumb__cate">일러두기</h3>
+                            <p class="thumb__txt">
+                                담당자가 알려주는 ‘이것만은 꼭!’
+                            </p>
+                        </div>
+                    </a>
+                </li>
+                <li class="article-list__thumb-wrapper article-list__thumb-wrapper--m">
+                    <a class="thumb" href="#">
+                        <div class="thumb__text-wrapper">
+                            <h3 class="thumb__cate">연재기사</h3>
+                            <p class="thumb__txt">
+                                생존과 평화 2편 - 말라리아 퇴치를 위한 남북 공동방역 사업
+                            </p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </section>
+        <!-- List Section category3-->
+        <section class="section section--cate3">
+            <h2 class="section__h2">
+                <b>정보</b> 마당
+            </h2>
+            <ul class="article-list">
+                <li class="article-list__thumb-wrapper article-list__thumb-wrapper--s">
+                    <a class="thumb" href="#">
+                        <div class="thumb__text-wrapper">
+                            <h3 class="thumb__cate">NK Trend1</h3>
+                            <p class="thumb__txt">
+                                북한 경제·대외무역 동향 외
+                            </p>
+                        </div>
+                    </a>
+                </li>
+                <li class="article-list__thumb-wrapper article-list__thumb-wrapper--s">
+                    <a class="thumb" href="#">
+                        <div class="thumb__text-wrapper">
+                            <h3 class="thumb__cate">NK Trend2</h3>
+                            <p class="thumb__txt">
+                                대북인도개발협력 동향
+                            </p>
+                        </div>
+                    </a>
+                </li>
+                <li class="article-list__thumb-wrapper article-list__thumb-wrapper--s">
+                    <a class="thumb" href="#">
+                        <div class="thumb__text-wrapper">
+                            <h3 class="thumb__cate">이달의 읽을거리</h3>
+                            <p class="thumb__txt">
+                                결박과 보상 : 북중관계의 방정식을 푸는 열쇠
+                            </p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </section>
+        <!-- 구독신청 -->
+        <aside class="section section--subscribe">
+            <div class="section--subscribe__container">
+                <div class="section--subscribe__icon">
+                    <span class="section--subscribe__ico-img">
+                    </span>
+                </div>
+                <div class="section--subscribe__text">
+                    <h3 class="section--subscribe__title">웹진 구독신청</h3>
+                    <p class="section--subscribe__desc">
+                        남북교류협력지원협회 웹진 이음 구독을 희망하시면, <br>아래에 이메일 주소를 입력해주세요.
+                    </p>
+                    <input class="section--subscribe__input" name="eventEmail" type="email" placeholder="example@sonosa.or.kr" required="">
+                    <button class="sonosa_subscribe" data-action="/event/insertEvent.do"
+                        onclick="sonosa_subscribe(2)">웹진 구독 신청하기</button>
                 </div>
             </div>
-            <div class="container">
-                <a href="#" class="logo--footer">
+        </aside>
+        <!-- List Section category2-->
+        <section class="section section--cate2">
+            <h2 class="section__h2">
+                <b>소통</b> 마당
+            </h2>
+            <ul class="article-list">
+                <li class="article-list__thumb-wrapper article-list__thumb-wrapper--m">
+                    <a class="thumb" href="#">
+                        <div class="thumb__text-wrapper">
+                            <h3 class="thumb__cate">SONOSA NEWS</h3>
+                            <p class="thumb__txt">
+                                남북교류협력 분야별 전문가 초청 세미나 개최 외
+                            </p>
+                        </div>
+                    </a>
+                </li>
+                <li class="article-list__thumb-wrapper article-list__thumb-wrapper--m">
+                    <a class="thumb" href="#">
+                        <div class="thumb__text-wrapper">
+                            <h3 class="thumb__cate">참여코너</h3>
+                            <p class="thumb__txt">
+                                말풍선 채워넣기
+                            </p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </section>
+        
+        <!-- footer -->
+        <footer class="section section--footer">
+            <div class="section__container">
+                <a href="#" class="section--footer__logo logo--footer">
                     남북교류협력지원협회 이음
                 </a>
                 <button class="subscribe">
                     웹진 구독 신청하기
                 </button>
-                <div class="footer-info">
-                    <dl>
-                        <dt>ADDRESS</dt>
-                        <dd>(우)04535 서울특별시 중구 퇴계로 97 고려대연각타워(6층,601호)</dd>
+                <address class="section--footer__info">
+                    <dl class="section--footer__dl">
+                        <dt class="section--footer__dt">ADDRESS</dt>
+                        <dd class="section--footer__dd">(우)04535 서울특별시 중구 퇴계로 97 고려대연각타워(6층,601호)</dd>
+                        <dt class="section--footer__dt">TEL</dt>
+                        <dd class="section--footer__dd"><a href="tel:02-564-5163">02-564-5163</a></dd>
+                        <dt class="section--footer__dt">FAX</dt>
+                        <dd class="section--footer__dd">02-564-6551</dd>
                     </dl>
-                    <dl>
-                        <dt>TEL</dt>
-                        <dd>02-564-5163</dd>
-                    </dl>
-                    <dl>
-                        <dt>FAX</dt>
-                        <dd>02-564-6551</dd>
-                    </dl>
-                    <dl>
-                        <dt>Copyright</dt>
-                        <dd>©2008 South-North Exchanges and Cooperation Support Association. All rights reserved</dd>
-                    </dl>
-                </div>
+
+                </address>
+                <p class="section--footer__copy">©2008 South-North Exchanges and Cooperation Support Association. All rights reserved</p>
+                
             </div>
-            <div class="family-link">
-                <a class="family-link" href="https://www.irenk.net/" target="_blank"> <span>북한지하자원넷 바로가기</span></a>
-                <a class="family-link" href="https://hairo.unikorea.go.kr/" target="_blank"> <span>대북지원정보시스템
-                        바로가기</span></a>
-            </div>
-            <ul class="sns-list">
-                <li><button onclick="kakaoList()">카카오톡으로 공유하기</button></li>
-                <li><button onclick="storylink()">카카오 스토리 공유하기</button></li>
-                <li><button onclick="facebooklink()">페이스북 공유하기</button></li>
-                <li><button onclick="twitterlink()">트위터 공유하기</button></li>
-                <li><button onclick="bandlink()">밴드 공유하기</button></li>
+            <ul class="section--footer__link-list">
+                <li>
+                    <a class="section--footer__family-link" href="https://www.irenk.net/" target="_blank">
+                        <span class="section--footer__link-txt">북한지하자원넷 바로가기</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="section--footer__family-link" href="https://hairo.unikorea.go.kr/" target="_blank">
+                        <span class="section--footer__link-txt">대북지원정보시스템 바로가기</span>
+                    </a>
+                </li>
             </ul>
-            <button id="list-toggle">
+            
+            <ul class="section--footer__sns-list">
+                <li><button class="section--footer__sns-link" onclick="kakaoList()">카카오톡으로 공유하기</button></li>
+                <li><button class="section--footer__sns-link" onclick="storylink()">카카오 스토리 공유하기</button></li>
+                <li><button class="section--footer__sns-link" onclick="facebooklink()">페이스북 공유하기</button></li>
+                <li><button class="section--footer__sns-link" onclick="twitterlink()">트위터 공유하기</button></li>
+                <li><button class="section--footer__sns-link" onclick="bandlink()">밴드 공유하기</button></li>
+            </ul>
+            <button class="section--footer__btn btn--toggle">
                 웹진 목록 보기
             </button>
-            <ul class="webzine-list">
-                <li><a href="#">남북협회 웹진 이음 2020년 8월호</a></li>
-                <li><a href="#">남북협회 웹진 이음 2020년 7월호</a></li>
-                <li><a href="#">남북협회 웹진 이음 2020년 6월호</a></li>
-                <li><a href="#">남북협회 웹진 이음 2020년 5월호</a></li>
-                <li><a href="#">남북협회 웹진 이음 2020년 4월호</a></li>
-                <li><a href="#">남북협회 웹진 이음 2020년 3월호</a></li>
+            <ul class="section--footer__webzine-list webzine-list">
+                <li><a class="webzine-list__btn" href="#">남북협회 웹진 이음 2020년 8월호</a></li>
+                <li><a class="webzine-list__btn" href="#">남북협회 웹진 이음 2020년 7월호</a></li>
+                <li><a class="webzine-list__btn" href="#">남북협회 웹진 이음 2020년 6월호</a></li>
+                <li><a class="webzine-list__btn" href="#">남북협회 웹진 이음 2020년 5월호</a></li>
+                <li><a class="webzine-list__btn" href="#">남북협회 웹진 이음 2020년 4월호</a></li>
+                <li><a class="webzine-list__btn" href="#">남북협회 웹진 이음 2020년 3월호</a></li>
             </ul>
         </footer>
     </div>
