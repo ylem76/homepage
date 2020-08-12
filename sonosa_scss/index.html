@@ -33,208 +33,263 @@
 
     <!-- css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.scss">
 
     <!-- js -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
     <script src="js/main.js"></script>
 
 </head>
 
 <body>
     <div class="body-wrapper">
-        <header class="section section--header">
-            <div class="section--header__logo">
-                <a href="#" class="logo logo--sonosa">남북교류협력지원협회</a>
-                <a href="#" class="logo logo--webzine">남북교류협력지원협회 웹진 이음</a>
+        <header class="header body-wrapper__header">
+            <div class="header__container">
+                <div class="header__logo">
+                    <a href="#" class="header__logo-link header__logo-link--sonosa">남북교류협력지원협회</a>
+                    <a href="#" class="header__logo-link header__logo-link--webzine">남북교류협력지원협회 웹진 이음</a>
+                </div>
+
+                <ul class="header__nav-scroll nav-scroll">
+                    <li class="nav-scroll__list">
+                        <button class="nav-scroll__btn" onclick="javascript:smoothscroll($('.category-1'));">이달의
+                            이야기</button>
+                    </li>
+                    <li class="nav-scroll__list">
+                        <button class="nav-scroll__btn" onclick="javascript:smoothscroll($('.category-2'));">포커스
+                            온</button>
+                    </li>
+                    <li class="nav-scroll__list">
+                        <button class="nav-scroll__btn"
+                            onclick="javascript:smoothscroll($('.category-3'));">정보마당</button>
+                    </li>
+                    <li class="nav-scroll__list">
+                        <button class="nav-scroll__btn"
+                            onclick="javascript:smoothscroll($('.category-4'));">소통마당</button>
+                    </li>
+                </ul>
+
+                <button class="header__toggle-menu toggle-menu">
+                    사이드메뉴 열기
+                    <span class="toggle-menu__line"></span>
+                    <span class="toggle-menu__line"></span>
+                    <span class="toggle-menu__line"></span>
+                </button>
             </div>
-
-            <ul class="nav--scroll">
-                <li>
-                    <button class="btn" onclick="javascript:smoothscroll($('.category-1'));">이달의 이야기</button>
-                </li>
-                <li>
-                    <button class="btn" onclick="javascript:smoothscroll($('.category-2'));">포커스 온</button>
-                </li>
-                <li>
-                    <button class="btn" onclick="javascript:smoothscroll($('.category-3'));">정보마당</button>
-                </li>
-                <li>
-                    <button class="btn" onclick="javascript:smoothscroll($('.category-4'));">소통마당</button>
-                </li>
-            </ul>
-
-            <button class="toggle-menu">
-                사이드메뉴 열기
-                <span class="toggle-menu__line"></span>
-                <span class="toggle-menu__line"></span>
-                <span class="toggle-menu__line"></span>
-            </button>
         </header>
         <!-- Visual Section -->
         <section class="section section--visual">
-            <div class="section__container container">
-                <h1 class="section--visual__logo">
-                    남북교류협력지원협회 웹진 이음
-                </h1>
-                <div class="section--visual__webzine-title">
-                    VOL. <b>83</b> / 2020. <b>08</b>
+            <div class="section--visual__container">
+                <div class="section--visual__logo-wrapper">
+                    <h1 class="section--visual__logo">
+                        남북교류협력지원협회 웹진 이음
+                        <div class="section--visual__webzine-title">
+                            VOL. <b>83</b> / 2020. <b>08</b>
+                        </div>
+                    </h1>
+
                 </div>
+                <button class="section--visual__scroll-bottom scroll-bottom"
+                    onclick="javascript:smoothscroll($('.category-1'));">
+                    아래로 스크롤
+                </button>
             </div>
-            <button class="scroll-bottom" onclick="javascript:smoothscroll($('.category-1'));">
-                아래로 스크롤
-            </button>
+
         </section>
 
-        <!-- List Section category1-->
-        <section class="section section--cate2">
-            <h2 class="section__h2">
-                이달의 <b>이야기</b>
-            </h2>
-            <ul class="article-list">
-                <li class="article-list__thumb-wrapper article-list__thumb-wrapper--s">
-                    <a class="thumb" href="#">
-                        <div class="thumb__text-wrapper">
-                            <h3 class="thumb__cate">커버 스토리</h3>
-                            <p class="thumb__txt">
-                                그날이 오면
-                            </p>
-                        </div>
-                    </a>
-                </li>
-                <li class="article-list__thumb-wrapper article-list__thumb-wrapper--l">
-                    <a class="thumb" href="#">
-                        <div class="thumb__text-wrapper">
-                            <h3 class="thumb__cate">특집</h3>
-                            <p class="thumb__txt">
-                                ‘탄소의 세계 in 한반도’
-                            </p>
-                        </div>
-                    </a>
-                </li>
-            </ul>
-        </section>
-        <!-- List Section category2-->
-        <section class="section section--cate2">
-            <h2 class="section__h2">
-                <b>포커스</b> 온
-            </h2>
-            <ul class="article-list">
-                <li class="article-list__thumb-wrapper article-list__thumb-wrapper--m">
-                    <a class="thumb" href="#">
-                        <div class="thumb__text-wrapper">
-                            <h3 class="thumb__cate">일러두기</h3>
-                            <p class="thumb__txt">
-                                담당자가 알려주는 ‘이것만은 꼭!’
-                            </p>
-                        </div>
-                    </a>
-                </li>
-                <li class="article-list__thumb-wrapper article-list__thumb-wrapper--m">
-                    <a class="thumb" href="#">
-                        <div class="thumb__text-wrapper">
-                            <h3 class="thumb__cate">연재기사</h3>
-                            <p class="thumb__txt">
-                                생존과 평화 2편 - 말라리아 퇴치를 위한 남북 공동방역 사업
-                            </p>
-                        </div>
-                    </a>
-                </li>
-            </ul>
-        </section>
-        <!-- List Section category3-->
-        <section class="section section--cate3">
-            <h2 class="section__h2">
-                <b>정보</b> 마당
-            </h2>
-            <ul class="article-list">
-                <li class="article-list__thumb-wrapper article-list__thumb-wrapper--s">
-                    <a class="thumb" href="#">
-                        <div class="thumb__text-wrapper">
-                            <h3 class="thumb__cate">NK Trend1</h3>
-                            <p class="thumb__txt">
-                                북한 경제·대외무역 동향 외
-                            </p>
-                        </div>
-                    </a>
-                </li>
-                <li class="article-list__thumb-wrapper article-list__thumb-wrapper--s">
-                    <a class="thumb" href="#">
-                        <div class="thumb__text-wrapper">
-                            <h3 class="thumb__cate">NK Trend2</h3>
-                            <p class="thumb__txt">
-                                대북인도개발협력 동향
-                            </p>
-                        </div>
-                    </a>
-                </li>
-                <li class="article-list__thumb-wrapper article-list__thumb-wrapper--s">
-                    <a class="thumb" href="#">
-                        <div class="thumb__text-wrapper">
-                            <h3 class="thumb__cate">이달의 읽을거리</h3>
-                            <p class="thumb__txt">
-                                결박과 보상 : 북중관계의 방정식을 푸는 열쇠
-                            </p>
-                        </div>
-                    </a>
-                </li>
-            </ul>
-        </section>
-        <!-- 구독신청 -->
-        <aside class="section section--subscribe">
-            <div class="section--subscribe__container">
-                <div class="section--subscribe__icon">
-                    <span class="section--subscribe__ico-img">
-                    </span>
+        <div class="body-wrapper__article">
+            <!-- List Section category1-->
+            <section class="section section--article section--cate1">
+                <div class="section__container">
+                    <h2 class="section__h2">
+                        이달의 <b>이야기</b>
+                    </h2>
+                    <ul class="article-list">
+                        <li class="article-list__thumb-wrapper article-list__thumb-wrapper--s">
+                            <a class="thumb" href="#">
+                                <div class="thumb__img">
+                                    <img src="img/vol/thumb_1.png" alt="">
+                                </div>
+                                <div class="thumb__text-wrapper">   
+                                    <h3 class="thumb__cate">커버 스토리</h3>
+                                    <p class="thumb__txt">
+                                        그날이 오면
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="article-list__thumb-wrapper article-list__thumb-wrapper--l">
+                            <a class="thumb" href="#">
+                                <div class="thumb__img">
+                                    <img src="img/vol/thumb_2.png" alt="">
+                                </div>
+                                <div class="thumb__text-wrapper">
+                                    <h3 class="thumb__cate">특집</h3>
+                                    <p class="thumb__txt">
+                                        ‘탄소의 세계 in 한반도’
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
-                <div class="section--subscribe__text">
-                    <h3 class="section--subscribe__title">웹진 구독신청</h3>
-                    <p class="section--subscribe__desc">
-                        남북교류협력지원협회 웹진 이음 구독을 희망하시면, <br>아래에 이메일 주소를 입력해주세요.
-                    </p>
-                    <input class="section--subscribe__input" name="eventEmail" type="email" placeholder="example@sonosa.or.kr" required="">
-                    <button class="sonosa_subscribe" data-action="/event/insertEvent.do"
-                        onclick="sonosa_subscribe(2)">웹진 구독 신청하기</button>
+            </section>
+            <!-- List Section category2-->
+            <section class="section section--article section--cate2">
+                <div class="section__container">
+                    <h2 class="section__h2">
+                        <b>포커스</b> 온
+                    </h2>
+                    <ul class="article-list">
+                        <li class="article-list__thumb-wrapper article-list__thumb-wrapper--m">
+                            <a class="thumb" href="#">
+                                <div class="thumb__img">
+                                    <img src="img/vol/thumb_3.png" alt="">
+                                </div>
+                                <div class="thumb__text-wrapper">
+                                    <h3 class="thumb__cate">일러두기</h3>
+                                    <p class="thumb__txt">
+                                        담당자가 알려주는 ‘이것만은 꼭!’
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="article-list__thumb-wrapper article-list__thumb-wrapper--m">
+                            <a class="thumb" href="#">
+                                <div class="thumb__img">
+                                    <img src="img/vol/thumb_4.png" alt="">
+                                </div>
+                                <div class="thumb__text-wrapper">
+                                    <h3 class="thumb__cate">연재기사</h3>
+                                    <p class="thumb__txt">
+                                        생존과 평화 2편 - 말라리아 퇴치를 위한 남북 공동방역 사업
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
-            </div>
-        </aside>
-        <!-- List Section category2-->
-        <section class="section section--cate2">
-            <h2 class="section__h2">
-                <b>소통</b> 마당
-            </h2>
-            <ul class="article-list">
-                <li class="article-list__thumb-wrapper article-list__thumb-wrapper--m">
-                    <a class="thumb" href="#">
-                        <div class="thumb__text-wrapper">
-                            <h3 class="thumb__cate">SONOSA NEWS</h3>
-                            <p class="thumb__txt">
-                                남북교류협력 분야별 전문가 초청 세미나 개최 외
-                            </p>
-                        </div>
-                    </a>
-                </li>
-                <li class="article-list__thumb-wrapper article-list__thumb-wrapper--m">
-                    <a class="thumb" href="#">
-                        <div class="thumb__text-wrapper">
-                            <h3 class="thumb__cate">참여코너</h3>
-                            <p class="thumb__txt">
-                                말풍선 채워넣기
-                            </p>
-                        </div>
-                    </a>
-                </li>
-            </ul>
-        </section>
+            </section>
+            <!-- List Section category3-->
+            <section class="section section--article section--cate3">
+                <div class="section__container">
+                    <h2 class="section__h2">
+                        <b>정보</b> 마당
+                    </h2>
+                    <ul class="article-list">
+                        <li class="article-list__thumb-wrapper article-list__thumb-wrapper--s">
+                            <a class="thumb" href="#">
+                                <div class="thumb__img">
+                                    <img src="img/vol/thumb_5.png" alt="">
+                                </div>
+                                <div class="thumb__text-wrapper">
+                                    <h3 class="thumb__cate">NK Trend1</h3>
+                                    <p class="thumb__txt">
+                                        북한 경제·대외무역 동향 외
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="article-list__thumb-wrapper article-list__thumb-wrapper--s">
+                            <a class="thumb" href="#">
+                                <div class="thumb__img">
+                                    <img src="img/vol/thumb_6.png" alt="">
+                                </div>
+                                <div class="thumb__text-wrapper">
+                                    <h3 class="thumb__cate">NK Trend2</h3>
+                                    <p class="thumb__txt">
+                                        대북인도개발협력 동향
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="article-list__thumb-wrapper article-list__thumb-wrapper--s">
+                            <a class="thumb" href="#">
+                                <div class="thumb__img">
+                                    <img src="img/vol/thumb_7.png" alt="">
+                                </div>
+                                <div class="thumb__text-wrapper">
+                                    <h3 class="thumb__cate">이달의 읽을거리</h3>
+                                    <p class="thumb__txt">
+                                        결박과 보상 : 북중관계의 방정식을 푸는 열쇠
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <!-- 구독신청 -->
+            <aside class="section section--subscribe">
+                <div class="section--subscribe__container">
+                    <div class="section--subscribe__icon">
+                        <span class="section--subscribe__ico-img">
+                        </span>
+                    </div>
+                    <div class="section--subscribe__text">
+                        <h3 class="section--subscribe__title">웹진 구독신청</h3>
+                        <p class="section--subscribe__desc">
+                            남북교류협력지원협회 웹진 이음 구독을 희망하시면, <br>아래에 이메일 주소를 입력해주세요.
+                        </p>
+                        <input class="section--subscribe__input" name="eventEmail" type="email"
+                            placeholder="example@sonosa.or.kr" required="">
+                        <button class="section--subscribe__submit" data-action="/event/insertEvent.do"
+                            onclick="sonosa_subscribe(2)">웹진 구독 신청하기</button>
+                    </div>
+                </div>
+            </aside>
+            <!-- List Section category2-->
+            <section class="section section--article section--cate4">
+                <div class="section__container">
+                    <h2 class="section__h2">
+                        <b>소통</b> 마당
+                    </h2>
+                    <ul class="article-list">
+                        <li class="article-list__thumb-wrapper article-list__thumb-wrapper--m">
+                            <a class="thumb" href="#">
+                                <div class="thumb__img">
+                                    <img src="img/vol/thumb_8.png" alt="">
+                                </div>
+                                <div class="thumb__text-wrapper">
+                                    <h3 class="thumb__cate">SONOSA NEWS</h3>
+                                    <p class="thumb__txt">
+                                        남북교류협력 분야별 전문가 초청 세미나 개최 외
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="article-list__thumb-wrapper article-list__thumb-wrapper--m">
+                            <a class="thumb" href="#">
+                                <div class="thumb__img">
+                                    <img src="img/vol/thumb_9.png" alt="">
+                                </div>
+                                <div class="thumb__text-wrapper">
+                                    <h3 class="thumb__cate">참여코너</h3>
+                                    <p class="thumb__txt">
+                                        말풍선 채워넣기
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </div>
         
         <!-- footer -->
         <footer class="section section--footer">
-            <div class="section__container">
-                <a href="#" class="section--footer__logo logo--footer">
+            <div class="section--footer__container">
+                <a href="#" class="section--footer__logo logo logo--footer">
                     남북교류협력지원협회 이음
                 </a>
-                <button class="subscribe">
+                <button class="section--footer__sub-btn">
                     웹진 구독 신청하기
                 </button>
+                
+            </div>
+            <div class="section--footer__container">
                 <address class="section--footer__info">
                     <dl class="section--footer__dl">
                         <dt class="section--footer__dt">ADDRESS</dt>
@@ -249,6 +304,7 @@
                 <p class="section--footer__copy">©2008 South-North Exchanges and Cooperation Support Association. All rights reserved</p>
                 
             </div>
+            <!--
             <ul class="section--footer__link-list">
                 <li>
                     <a class="section--footer__family-link" href="https://www.irenk.net/" target="_blank">
@@ -262,7 +318,8 @@
                 </li>
             </ul>
             
-            <ul class="section--footer__sns-list">
+            
+                <ul class="section--footer__sns-list">
                 <li><button class="section--footer__sns-link" onclick="kakaoList()">카카오톡으로 공유하기</button></li>
                 <li><button class="section--footer__sns-link" onclick="storylink()">카카오 스토리 공유하기</button></li>
                 <li><button class="section--footer__sns-link" onclick="facebooklink()">페이스북 공유하기</button></li>
@@ -280,6 +337,7 @@
                 <li><a class="webzine-list__btn" href="#">남북협회 웹진 이음 2020년 4월호</a></li>
                 <li><a class="webzine-list__btn" href="#">남북협회 웹진 이음 2020년 3월호</a></li>
             </ul>
+            -->
         </footer>
     </div>
 </body>
