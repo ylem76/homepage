@@ -1,17 +1,84 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
+    <head>
+        <meta charset="UTF-8">
+        <title>Song Song Song</title>
+        <meta name="author" content="ylem76">
+        <meta name="description" content="Song Song Song">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport"
+            content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0 user-scalable=no">
     
-    <title>Document</title>
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-    <link rel="stylesheet" href="css/style.scss">
-</head>
+        <!-- ANCHOR og -->
+        <meta property="og:type" content="website">
+        <meta property="og:site_name" content="Song Song Song">
+        <meta property="og:title" content="Song Song Song">
+        <meta property="og:description" content="송효정 개발 포트폴리오">
+        <meta property="og:image" content="img/vol/share_fb.png">
+        <meta property="og:url" content="http://ylem76">
+    
+        <!-- ANCHOR twitter card -->
+        <meta property="twitter:card" content="summary">
+        <meta property="twitter:site" content="송효정 개발 포트폴리오">
+        <meta property="twitter:title" content="송효정 개발 포트폴리오">
+        <meta property="twitter:description" content="디자인을 이해하는 퍼블리셔 송효정입니다.">
+        <meta property="twitter:image" content="img/vol/share_twit.png">
+        <meta property="twitter:url" content="">
+    
+        <!-- ANCHOR favicon -->
+        <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico">
+        <link rel="icon" href="./img/favicon.png">
+        <link rel="apple-touch-icon" href="./img/favicon.png">
+    
+        <!-- ANCHOR css -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="lib/lightslider.min.css">
+        <link rel="stylesheet" href="css/style.css">
+    
+        <!-- ANCHOR js -->
+        <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+        <script src="js/main.js"></script>
+        <script src="lib/lightslider.min.js"></script>
+    
+    </head>
 <body>
-    <p class="test">test</p>
-    
+    <!-- ANCHOR slider -->
+    <div class="body-wrapper">
+        <section id="slider">
+            <ul>
+                <li>
+                    <img src="img/slide1_1.png" alt="디자인을 이해하는 퍼블리셔 송효정입니다.">
+                </li>
+                <li>
+                    <img src="img/slide1_2.png" alt="개인 역량 안내">
+                </li>
+                <li>
+                    <img src="img/slide1_3.png" alt="동양생명 웹진">
+                </li>
+                <li>
+                    <img src="img/slide1_4.png" alt="남북협회 웹진 이음">
+                </li>
+                <li>
+                    <img src="img/slide1_5.png" alt="IBK기업은행 아름다운 은퇴">
+                </li>
+                <li>
+                    <img src="img/slide1_6.png" alt="서울시립 보라매병원 웹진 보람애">
+                </li>
+                <li>
+                    <img src="img/slide1_7.png" alt="건강정보심사평가원 건강을 지키는 사람들">
+                </li>
+            </ul>
+        </section>
+    </div>
+    <script>
+        $(document).ready(function () {
+            $('#slider').lightSlider({
+                vertical: true,
+                loop: true
+            });
+        });
+    </script>
 </body>
 </html>
