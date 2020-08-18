@@ -33,52 +33,49 @@
         <!-- ANCHOR css -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
-        <link rel="stylesheet" href="lib/lightslider.min.css">
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
         <link rel="stylesheet" href="css/style.css">
     
         <!-- ANCHOR js -->
         <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
-        <script src="js/main.js"></script>
-        <script src="lib/lightslider.min.js"></script>
-    
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <script src="js/main.js"></script>    
     </head>
 <body>
     <!-- ANCHOR slider -->
     <div class="body-wrapper">
-        <section id="slider">
-            <ul>
-                <li>
+        
+        <div class="swiper-container">
+            
+            <div class="swiper-wrapper">
+                
+                <div class="swiper-slide">
                     <img src="img/slide1_1.png" alt="디자인을 이해하는 퍼블리셔 송효정입니다.">
-                </li>
-                <li>
+                </div>
+                <div class="swiper-slide">
                     <img src="img/slide1_2.png" alt="개인 역량 안내">
-                </li>
-                <li>
-                    <img src="img/slide1_3.png" alt="동양생명 웹진">
-                </li>
-                <li>
-                    <img src="img/slide1_4.png" alt="남북협회 웹진 이음">
-                </li>
-                <li>
-                    <img src="img/slide1_5.png" alt="IBK기업은행 아름다운 은퇴">
-                </li>
-                <li>
-                    <img src="img/slide1_6.png" alt="서울시립 보라매병원 웹진 보람애">
-                </li>
-                <li>
-                    <img src="img/slide1_7.png" alt="건강정보심사평가원 건강을 지키는 사람들">
-                </li>
-            </ul>
-        </section>
+                </div>
+                <div class="swiper-slide"><img src="img/slide1_3.png" alt="동양생명 웹진"></div>
+                <div class="swiper-slide"><img src="img/slide1_4.png" alt="남북협회 웹진 이음"></div>
+                <div class="swiper-slide"><img src="img/slide1_5.png" alt="IBK기업은행 아름다운 은퇴"></div>
+                <div class="swiper-slide"><img src="img/slide1_6.png" alt="서울시립 보라매병원 웹진 보람애"></div>
+                <div class="swiper-slide"><img src="img/slide1_7.png" alt="건강정보심사평가원 건강을 지키는 사람들"></div>
+            </div>
+            
+            <div class="swiper-pagination"></div>
+
+            
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+            
+            <div class="swiper-scrollbar"></div>
+        </div>
+        
     </div>
     <script>
-        $(document).ready(function () {
-            $('#slider').lightSlider({
-                vertical: true,
-                loop: true
-            });
-        });
+        var swiper = new Swiper('.swiper-container');
     </script>
 </body>
 </html>

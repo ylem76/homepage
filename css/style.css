@@ -1,0 +1,33 @@
+body-wrapper {
+    max-width:100%;
+    max-height:100vh;
+    overflow:hidden;
+    position:relative;
+}
+
+.slider-wrapper {
+    max-width:100%;
+    max-height:100vh;
+    left:50%;
+    transform:translateX(-50%);
+    position:absolute;    
+    background:red;
+    overflow: hidden;
+}
+
+@media (min-aspect-ratio: 16/9) {/*16:9보다 세로 높이가 낮을 때*/
+    .slider-wrapper {
+    height:100vh;
+    height:320px;
+    width:178vh;
+    background:blue;
+    
+}
+
+#slider {
+    width:100%;
+    height:100%;
+}
+
+
+}
