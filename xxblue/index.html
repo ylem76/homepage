@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>XXBLUE | 엑스엑스블루, 내일의 시세를 보는 거래 플랫폼</title>
+    <meta name="author" content="ylem76">
+    <meta name="description" content="엑스엑스블루 클론 코딩 연습 사이트입니다.">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0 user-scalable=no">
+
+    <!-- og -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="XXBLUE">
+    <meta property="og:title" content="XXBLUE | 엑스엑스블루, 내일의 시세를 보는 거래 플랫폼">
+    <meta property="og:description" content="엑스엑스블루 클론 코딩 연습 사이트입니다.">
+    <!-- <meta property="og:image" content="/share_fb.2402816e.png"> -->
+    <meta property="og:url" content="https://xxblue.com/">
+
+    <!-- twitter card -->
+    <meta property="twitter:card" content="summary">
+    <meta property="twitter:site" content="XXBLUE | 엑스엑스블루">
+    <meta property="twitter:title" content="XXBLUE | 엑스엑스블루, 내일의 시세를 보는 거래 플랫폼">
+    <meta property="twitter:description" content="엑스엑스블루 클론 코딩 연습 사이트입니다.">
+    <!-- <meta property="twitter:image" content="img/vol/share_twit.png"> -->
+    <meta property="twitter:url" content="https://xxblue.com/">
+
+    <!-- favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" href="favicon.png">
+    <link rel="apple-touch-icon" href="favicon.png">
+
+    <!-- css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+    <!--font-->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;500&family=Roboto:wght@100;300;400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- js -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+</head>
+
+<body>
+    <div class="body-wrapper">
+        <aside class="top-banner">
+            <ul>
+                <li><a class="top-banner__items" href=""></a></li>
+            </ul>
+        </aside>
+        <header class="header">
+            <h1>
+                <a href="https://xxblue.com/" class="logo header__logo">XXBLUE</a>
+            </h1>
+            <nav>
+                <ul class="menu menu--category">
+                    <li><a class="menu__item" href="#">SNEAKERS</a></li>
+                    <li><a class="menu__item" href="#">STREETWEAR</a></li>
+                    <li><a class="menu__item" href="#">LUXURY</a></li>
+                    <li><a class="menu__item" href="#">WATCHES</a></li>
+                    <li><a class="menu__item" href="#">ART</a></li>
+                </ul>
+            </nav>
+            <nav>
+                <ul class="menu menu--customer">
+                    <li>
+                        <button class="btn-search"></button></li>
+                    <li><a class="menu__item" href="#">LOGIN</a></li>
+                    <li><a class="menu__item" href="#">JOIN</a></li>
+                    <li><a class="menu__item" href="#">NOTICES</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section class="section section--popular">
+            <h2>인기 상품</h2>
+            <ul class="popular-list">
+                <li>
+                    <a href="#" class="product product--popular">
+                        <img src="img/product/SB-Dunk-Low-J-pack-Chicago_2.jpg" alt="SB Dunk Low Pro Chicago">
+                        <button class="product--popular__graph">
+                        </button>
+                        <p class="product__name">SB Dunk Low Pro Chicago</p>
+                        <p class="product__price"><span>1,600,000</span></p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="product product--popular">
+                        <img src="img/product/SB-Dunk-Low-J-pack-Chicago_2.jpg" alt="SB Dunk Low Pro Chicago">
+                        <button class="product--popular__graph">
+                        </button>
+                        <p class="product__name">SB Dunk Low Pro Chicago</p>
+                        <p class="product__price"><span>1,600,000</span></p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="product product--popular">
+                        <img src="img/product/SB-Dunk-Low-J-pack-Chicago_2.jpg" alt="SB Dunk Low Pro Chicago">
+                        <button class="product--popular__graph">
+                        </button>
+                        <p class="product__name">SB Dunk Low Pro Chicago</p>
+                        <p class="product__price"><span>1,600,000</span></p>
+                    </a>
+                </li>
+
+            </ul>
+        </section>
+        <aside class="modal modal--visible">
+
+        </aside>
+        <section class="section section--recommend">
+            <h2>추천 상품</h2>
+            <ul class="recommend-list">
+                <li class="recommend-list__banner">
+                    <a href="#" class="banner">
+                    </a>
+                </li>
+                <li class="recommend-list__item">
+                    <a href="#" class="product product--recommend">
+                        <div class="product--recommend__thumb">
+                            <img src="img/product/Stussy-x-Nike-Bucket-Hat-Black.jpg"
+                                alt="Stussy x Nike Bucket Hat Black">
+                        </div>
+                        <p class="product--recommend__name product__name">Stussy x Nike Bucket Hat Black</p>
+                        <p class="product__price">77,000</p>
+                    </a>
+                </li>
+                <li class="recommend-list__item">
+                    <a href="#" class="product product--recommend">
+                        <div class="product--recommend__thumb">
+                            <img src="img/product/Stussy-x-Nike-Bucket-Hat-Black.jpg"
+                                alt="Stussy x Nike Bucket Hat Black">
+                        </div>
+                        <p class="product--recommend__name product__name">Stussy x Nike Bucket Hat Black</p>
+                        <p class="product__price">77,000</p>
+                    </a>
+                </li>
+                <li class="recommend-list__item">
+                    <a href="#" class="product product--recommend">
+                        <div class="product--recommend__thumb">
+                            <img src="img/product/Stussy-x-Nike-Bucket-Hat-Black.jpg"
+                                alt="Stussy x Nike Bucket Hat Black">
+                        </div>
+                        <p class="product--recommend__name product__name">Stussy x Nike Bucket Hat Black</p>
+                        <p class="product__price">77,000</p>
+                    </a>
+                </li>
+                <li class="recommend-list__item">
+                    <a href="#" class="product product--recommend">
+                        <div class="product--recommend__thumb">
+                            <img src="img/product/Stussy-x-Nike-Bucket-Hat-Black.jpg"
+                                alt="Stussy x Nike Bucket Hat Black">
+                        </div>
+                        <p class="product--recommend__name product__name">Stussy x Nike Bucket Hat Black</p>
+                        <p class="product__price">77,000</p>
+                    </a>
+                </li>
+                <li class="recommend-list__item">
+                    <a href="#" class="product product--recommend">
+                        <div class="product--recommend__thumb">
+                            <img src="img/product/Stussy-x-Nike-Bucket-Hat-Black.jpg"
+                                alt="Stussy x Nike Bucket Hat Black">
+                        </div>
+                        <p class="product--recommend__name product__name">Stussy x Nike Bucket Hat Black</p>
+                        <p class="product__price">77,000</p>
+                    </a>
+                </li>
+                <li class="recommend-list__item">
+                    <a href="#" class="product product--recommend">
+                        <div class="product--recommend__thumb">
+                            <img src="img/product/Stussy-x-Nike-Bucket-Hat-Black.jpg"
+                                alt="Stussy x Nike Bucket Hat Black">
+                        </div>
+                        <p class="product--recommend__name product__name">Stussy x Nike Bucket Hat Black</p>
+                        <p class="product__price">77,000</p>
+                    </a>
+                </li>
+                <li class="recommend-list__item">
+                    <a href="#" class="product product--recommend">
+                        <div class="product--recommend__thumb">
+                            <img src="img/product/Stussy-x-Nike-Bucket-Hat-Black.jpg"
+                                alt="Stussy x Nike Bucket Hat Black">
+                        </div>
+                        <p class="product--recommend__name product__name">Stussy x Nike Bucket Hat Black</p>
+                        <p class="product__price">77,000</p>
+                    </a>
+                </li>
+                <li class="recommend-list__item">
+                    <a href="#" class="product product--recommend">
+                        <div class="product--recommend__thumb">
+                            <img src="img/product/Stussy-x-Nike-Bucket-Hat-Black.jpg"
+                                alt="Stussy x Nike Bucket Hat Black">
+                        </div>
+                        <p class="product--recommend__name product__name">Stussy x Nike Bucket Hat Black</p>
+                        <p class="product__price">77,000</p>
+                    </a>
+                </li>
+                <li class="recommend-list__item">
+                    <a href="#" class="product product--recommend">
+                        <div class="product--recommend__thumb">
+                            <img src="img/product/Stussy-x-Nike-Bucket-Hat-Black.jpg"
+                                alt="Stussy x Nike Bucket Hat Black">
+                        </div>
+                        <p class="product--recommend__name product__name">Stussy x Nike Bucket Hat Black</p>
+                        <p class="product__price">77,000</p>
+                    </a>
+                </li>
+                <li class="recommend-list__item">
+                    <a href="#" class="product product--recommend">
+                        <div class="product--recommend__thumb">
+                            <img src="img/product/Stussy-x-Nike-Bucket-Hat-Black.jpg"
+                                alt="Stussy x Nike Bucket Hat Black">
+                        </div>
+                        <p class="product--recommend__name product__name">Stussy x Nike Bucket Hat Black</p>
+                        <p class="product__price">77,000</p>
+                    </a>
+                </li>
+                <li class="recommend-list__item">
+                    <a href="#" class="product product--recommend">
+                        <div class="product--recommend__thumb">
+                            <img src="img/product/Stussy-x-Nike-Bucket-Hat-Black.jpg"
+                                alt="Stussy x Nike Bucket Hat Black">
+                        </div>
+                        <p class="product--recommend__name product__name">Stussy x Nike Bucket Hat Black</p>
+                        <p class="product__price">77,000</p>
+                    </a>
+                </li>
+                <li class="recommend-list__item">
+                    <a href="#" class="product product--recommend">
+                        <div class="product--recommend__thumb">
+                            <img src="img/product/Stussy-x-Nike-Bucket-Hat-Black.jpg"
+                                alt="Stussy x Nike Bucket Hat Black">
+                        </div>
+                        <p class="product--recommend__name product__name">Stussy x Nike Bucket Hat Black</p>
+                        <p class="product__price">77,000</p>
+                    </a>
+                </li>
+                <li class="recommend-list__item">
+                    <a href="#" class="product product--recommend">
+                        <div class="product--recommend__thumb">
+                            <img src="img/product/Stussy-x-Nike-Bucket-Hat-Black.jpg"
+                                alt="Stussy x Nike Bucket Hat Black">
+                        </div>
+                        <p class="product--recommend__name product__name">Stussy x Nike Bucket Hat Black</p>
+                        <p class="product__price">77,000</p>
+                    </a>
+                </li>
+                <li class="recommend-list__item">
+                    <a href="#" class="product product--recommend">
+                        <div class="product--recommend__thumb">
+                            <img src="img/product/Stussy-x-Nike-Bucket-Hat-Black.jpg"
+                                alt="Stussy x Nike Bucket Hat Black">
+                        </div>
+                        <p class="product--recommend__name product__name">Stussy x Nike Bucket Hat Black</p>
+                        <p class="product__price">77,000</p>
+                    </a>
+                </li>
+                <li class="recommend-list__item">
+                    <a href="#" class="product product--recommend">
+                        <div class="product--recommend__thumb">
+                            <img src="img/product/Stussy-x-Nike-Bucket-Hat-Black.jpg"
+                                alt="Stussy x Nike Bucket Hat Black">
+                        </div>
+                        <p class="product--recommend__name product__name">Stussy x Nike Bucket Hat Black</p>
+                        <p class="product__price">77,000</p>
+                    </a>
+                </li>
+                <li class="recommend-list__item">
+                    <a href="#" class="product product--recommend">
+                        <div class="product--recommend__thumb">
+                            <img src="img/product/Stussy-x-Nike-Bucket-Hat-Black.jpg"
+                                alt="Stussy x Nike Bucket Hat Black">
+                        </div>
+                        <p class="product--recommend__name product__name">Stussy x Nike Bucket Hat Black</p>
+                        <p class="product__price">77,000</p>
+                    </a>
+                </li>
+                <li class="recommend-list__item">
+                    <a href="#" class="product product--recommend">
+                        <div class="product--recommend__thumb">
+                            <img src="img/product/Stussy-x-Nike-Bucket-Hat-Black.jpg"
+                                alt="Stussy x Nike Bucket Hat Black">
+                        </div>
+                        <p class="product--recommend__name product__name">Stussy x Nike Bucket Hat Black</p>
+                        <p class="product__price">77,000</p>
+                    </a>
+                </li>
+                <li class="recommend-list__item">
+                    <a href="#" class="product product--recommend">
+                        <div class="product--recommend__thumb">
+                            <img src="img/product/Stussy-x-Nike-Bucket-Hat-Black.jpg"
+                                alt="Stussy x Nike Bucket Hat Black">
+                        </div>
+                        <p class="product--recommend__name product__name">Stussy x Nike Bucket Hat Black</p>
+                        <p class="product__price">77,000</p>
+                    </a>
+                </li>
+            </ul>
+        </section>
+        <section class="section section--sub">
+            <section class="section--sub__calendar">
+                <h2>런칭 캘린더</h2>
+                <a href="#" class="link link--more">+ MORE</a>
+                <ul class="calendar-list">
+                    <li>
+                        <a class="product product--calendar" href="#">
+                            <p class="product--calendar__date">08/24</p>
+                            <img src="img/product/Adapt-BB-2.0-Mag-KR-Charger.jpg" alt="">
+                            <p class="product--calendar__name">Adapt BB 2.0 Mag (KR Charger)</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="product product--calendar" href="#">
+                            <p class="product--calendar__date">08/24</p>
+                            <img src="img/product/Adapt-BB-2.0-Mag-KR-Charger.jpg" alt="">
+                            <p class="product--calendar__name">Adapt BB 2.0 Mag (KR&nbsp;Charger)</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="product product--calendar" href="#">
+                            <p class="product--calendar__date">08/24</p>
+                            <img src="img/product/Adapt-BB-2.0-Mag-KR-Charger.jpg" alt="">
+                            <p class="product--calendar__name">Adapt BB 2.0 Mag (KR Charger)</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="product product--calendar" href="#">
+                            <p class="product--calendar__date">08/24</p>
+                            <img src="img/product/Adapt-BB-2.0-Mag-KR-Charger.jpg" alt="">
+                            <p class="product--calendar__name">Adapt BB 2.0 Mag (KR Charger)</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="product product--calendar" href="#">
+                            <p class="product--calendar__date">08/24</p>
+                            <img src="img/product/Adapt-BB-2.0-Mag-KR-Charger.jpg" alt="">
+                            <p class="product--calendar__name">Adapt BB 2.0 Mag (KR Charger)</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="product product--calendar" href="#">
+                            <p class="product--calendar__date">08/24</p>
+                            <img src="img/product/Adapt-BB-2.0-Mag-KR-Charger.jpg" alt="">
+                            <p class="product--calendar__name">Adapt BB 2.0 Mag (KR Charger)</p>
+                        </a>
+                    </li>
+                </ul>
+
+            </section>
+            <section class="section--sub__keywords">
+                <h2>인기 키워드</h2>
+                <ul>
+                    <li>
+                        <a href="#" class="keywords">#조던</a>
+                    </li>
+                    <li>
+                        <a href="#" class="keywords">#슈프림</a>
+                    </li>
+                    <li>
+                        <a href="#" class="keywords">#이지350V2</a>
+                    </li>
+                    <li>
+                        <a href="#" class="keywords">#오프화이트</a>
+                    </li>
+                    <li>
+                        <a href="#" class="keywords">#스투시</a>
+                    </li>
+                </ul>
+            </section>
+        </section>
+        <footer class="section section--footer">
+            <div class="container">
+                <div class="logo logo--footer">
+
+                </div>
+                <div class="section--footer__row">
+                    <div class="section--footer__left">
+                        <ul class="section--footer__menu">
+                            <li><a href="#">이용약관</a></li>
+                            <li><a href="#">전자금융거래이용약관</a></li>
+                            <li><a href="#">개인정보보호방침</a></li>
+                        </ul>
+                        <address class="section--footer__address">
+                            <dl>
+                                <dt>상호</dt>
+                                <dd>(주) 엑스바이블루</dd>
+                            </dl>
+                            <dl>
+                                <dt>
+                                    대표이사
+                                </dt>
+                                <dd>
+                                    오세건
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>사업자등록번호</dt>
+                                <dd>755-86-01476 <a href="#">사업자 확인</a></dd>
+                            </dl>
+                            <dl>
+                                <dt>통신판매업신고</dt>
+                                <dd>
+                                    2019-서울강남-03088 <a href="#">에스크로서비스 가입 확인</a>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>
+                                    호스팅사업자
+                                </dt>
+                                <dd>
+                                    (주)엑스바이블루
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>
+                                    주소
+                                </dt>
+                                <dd>서울특별시 강남구 도산대로 317, 3층 (신사동, 호림아트센터)</dd>
+                            </dl>
+                            <dl>
+                                <dt>개인정보관리책임자</dt>
+                                <dd>윤여진</dd>
+                            </dl>
+                            <dl>
+                                <dt>배송지</dt>
+                                <dd>서울특별시 강남구 언주로 864 (신사동 636-4) B1층 XXBLUE</dd>
+                            </dl>
+                        </address>
+
+                    </div>
+                    <div class="section--footer__right">
+                        <ul class="section--footer__links">
+                            <li>
+                                <h3>GUIDE MENU</h3>
+                                <ul>
+                                    <li><a href="#">공지사항</a></li>
+                                    <li><a href="#">FAQ</a></li>
+                                    <li><a href="#">이용안내</a></li>
+                                    <li><a href="#">DROP ZONE 안내</a></li>
+                                    <li><a href="#">회사소개</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h3>HELP</h3>
+                                <ul>
+                                    <li>
+                                        <a href="mailto:info@XXBLUE.com">info@XXBLUE.com</a>
+                                        <br>
+                                        <a href="tel:02-545-1476">02-545-1476</a>
+                                        <br>
+                                        <p>
+                                            평일 11:00~17:00<br>점심 12:00~13:00<br>토/일, 공휴일 휴무
+                                        </p>
+                                    </li>
+                                    
+                                </ul>
+                            </li>
+                            <li>
+                                <h3>AFFILIATED SERVICES</h3>
+                                <ul>
+                                    <li><a href="#">서울옥션블루</a></li>
+                                    <li><a href="#">Rare by Blue</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h3>SNS</h3>
+                                <ul class="section--footer__sns">
+                                    <li>
+                                        <a href="#"><img src="img/common/face-book.png" alt="페이스북 링크"></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><img src="img/common/instagram.png" alt="인스타그램 링크"></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><img src="img/common/youtube.png" alt="유튜브 링크"></a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <p class="copy-text">
+                    Copyright ⓒ 2020 XXBLUE Co., Ltd. All Rights Reserved.
+                </p>
+            </div>
+        </footer>
+        <button class="btn-top">
+
+        </button>
+        
+    </div>
+</body>
+
+</html>
