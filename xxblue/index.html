@@ -15,7 +15,7 @@
     <meta property="og:site_name" content="XXBLUE">
     <meta property="og:title" content="XXBLUE | 엑스엑스블루, 내일의 시세를 보는 거래 플랫폼">
     <meta property="og:description" content="엑스엑스블루 클론 코딩 연습 사이트입니다.">
-    <!-- <meta property="og:image" content="/share_fb.2402816e.png"> -->
+    <meta property="og:image" content="img/common/og_img.png">
     <meta property="og:url" content="https://xxblue.com/">
 
     <!-- twitter card -->
@@ -23,7 +23,7 @@
     <meta property="twitter:site" content="XXBLUE | 엑스엑스블루">
     <meta property="twitter:title" content="XXBLUE | 엑스엑스블루, 내일의 시세를 보는 거래 플랫폼">
     <meta property="twitter:description" content="엑스엑스블루 클론 코딩 연습 사이트입니다.">
-    <!-- <meta property="twitter:image" content="img/vol/share_twit.png"> -->
+    <meta property="twitter:image" content="img/common/og_img.png">
     <meta property="twitter:url" content="https://xxblue.com/">
 
     <!-- favicon -->
@@ -523,7 +523,6 @@
             }
             if (e.type == "scroll") {
                 banner_h = $('.top-banner').outerHeight();
-                console.log(banner_h);
                 scroll_top = $(window).scrollTop(); //현재 스크롤 위치 알아내기
                 if (scroll_top > banner_h) { //배너 크기보다 스크롤 값이 클 때 header에 sticky클래스 추가
                     $('.header').addClass("sticky");

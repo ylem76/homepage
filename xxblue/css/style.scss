@@ -49,7 +49,7 @@ button {
 /*header*/
 .header {
     width:100%;
-    height:80px;
+    height:81px;
     box-sizing:border-box;
     position: relative;
     padding: 0 38px;
@@ -212,7 +212,7 @@ button {
 /**/
 @media(max-width:991px) {
     .header {
-        height: 60px;
+        height: 61px;
         margin-bottom:-61px;       
         &__logo {
             bottom: 13px;
