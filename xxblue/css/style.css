@@ -593,6 +593,8 @@ h2 {
     font-size: 13px;
     line-height: 1.5;
     color: #666; }
+    .section--footer__address dl:last-child {
+      margin-top: 1em; }
     .section--footer__address dt,
     .section--footer__address dd {
       display: inline; }
@@ -675,6 +677,8 @@ h2 {
       .section--footer__links > li {
         width: 50%;
         margin-bottom: 32px; }
+    .section--footer__menu li {
+      font-size: 14px; }
 
   .btn-top {
     margin-right: 15px;

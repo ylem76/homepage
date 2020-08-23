@@ -830,6 +830,10 @@ h2 {
         line-height: 1.5;
         color: #666;
 
+        dl:last-child{
+            margin-top:1em;
+        }
+
         dt,
         dd {
             display: inline;
@@ -957,6 +961,12 @@ h2 {
                 margin-bottom:32px;
             }
         }
+
+        &__menu li {
+            font-size:14px;
+        }
+
+        
     }
 
     .btn-top {
