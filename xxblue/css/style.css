@@ -35,16 +35,27 @@ button {
     background-image: url("../img/top_banner/banner-image-prod-1-M-1-20200818182305.png"); } }
 /*header*/
 .header {
-  padding: 0 38px;
+  width: 100%;
+  height: 80px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   position: relative;
+  padding: 0 38px;
+  margin-bottom: -81px;
   overflow: hidden;
-  border-bottom: 1px solid #e8e8e8; }
+  border-bottom: 1px solid #e8e8e8;
+  background-color: #fff; }
   .header__logo {
     position: absolute;
     left: 50%;
-    top: 23px;
+    bottom: 23px;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%); }
+  .header.sticky {
+    position: fixed;
+    top: 0;
+    margin-top: 0;
+    z-index: 999; }
 
 .logo {
   text-indent: -9999px;
@@ -150,9 +161,10 @@ button {
 /**/
 @media (max-width: 991px) {
   .header {
-    height: 60px; }
+    height: 60px;
+    margin-bottom: -61px; }
     .header__logo {
-      top: 13px; }
+      bottom: 13px; }
 
   .header nav {
     display: none; }

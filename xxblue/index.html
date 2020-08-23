@@ -42,6 +42,7 @@
     <link rel="stylesheet" href="css/style.css">
 
     <!-- js -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
 </head>
@@ -315,28 +316,28 @@
                         <a class="product product--calendar" href="#">                            
                             <img src="img/product/Adapt-BB-2.0-Mag-KR-Charger.jpg" alt="">
                             <p class="product--calendar__date">08/24</p>
-                            <p class="product--calendar__name">Adapt BB 2.0 Mag (KR Charger)</p>
+                            <p class="product--calendar__name">Adapt BB 2.0 Mag (KR&nbsp;Charger)</p>
                         </a>
                     </li>
                     <li>
                         <a class="product product--calendar" href="#">                            
                             <img src="img/product/Adapt-BB-2.0-Mag-KR-Charger.jpg" alt="">
                             <p class="product--calendar__date">08/24</p>
-                            <p class="product--calendar__name">Adapt BB 2.0 Mag (KR Charger)</p>
+                            <p class="product--calendar__name">Adapt BB 2.0 Mag (KR&nbsp;Charger)</p>
                         </a>
                     </li>
                     <li>
                         <a class="product product--calendar" href="#">                            
                             <img src="img/product/Adapt-BB-2.0-Mag-KR-Charger.jpg" alt="">
                             <p class="product--calendar__date">08/24</p>
-                            <p class="product--calendar__name">Adapt BB 2.0 Mag (KR Charger)</p>
+                            <p class="product--calendar__name">Adapt BB 2.0 Mag (KR&nbsp;Charger)</p>
                         </a>
                     </li>
                     <li>
                         <a class="product product--calendar" href="#">                            
                             <img src="img/product/Adapt-BB-2.0-Mag-KR-Charger.jpg" alt="">
                             <p class="product--calendar__date">08/24</p>
-                            <p class="product--calendar__name">Adapt BB 2.0 Mag (KR Charger)</p>
+                            <p class="product--calendar__name">Adapt BB 2.0 Mag (KR&nbsp;Charger)</p>
                         </a>
                     </li>
                     <li>
@@ -506,6 +507,37 @@
         </button>
         
     </div>
+
+    <script>
+        //스크롤 스티키네비	
+        var screen_w = 0;
+        var screenh = $(window).height();
+        var banner_h = 0; 
+        var scroll_top = 0;
+        $(window).on('load resize scroll', function(e) {
+            if (e.type == "load") {
+                banner_h = $('top-banner').height(); //상단 배너 크기 알아내기
+            }
+            if (e.type == "resize") {
+                
+            }
+            if (e.type == "scroll") {
+                banner_h = $('.top-banner').outerHeight();
+                console.log(banner_h);
+                scroll_top = $(window).scrollTop(); //현재 스크롤 위치 알아내기
+                if (scroll_top > banner_h) { //배너 크기보다 스크롤 값이 클 때 header에 sticky클래스 추가
+                    $('.header').addClass("sticky");
+                } else {
+                    $('.header').removeClass("sticky");
+                }
+            }
+        });
+    
+        
+    
+    </script>
 </body>
+
+
 
 </html>
