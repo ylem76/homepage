@@ -1,4 +1,0 @@
-<svg id="btn-play" data-name="btn-play" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
-  <path id="path-1" data-name="path-1" d="M24,0A24,24,0,1,1,0,24,24,24,0,0,1,24,0Z" fill="#ddd" fill-rule="evenodd"/>
-  <path id="path-2" data-name="path-1" d="M34.992,25.008l-17,10v-20Z" fill="#fff" fill-rule="evenodd"/>
-</svg>
